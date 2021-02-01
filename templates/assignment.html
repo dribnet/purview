@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=1000">
+<title>versions of assignment {{ assignment_id }}</title>
+
+<link rel="icon" href="/static/favicon.png">
+<style>
+@import url("/static/style.css");
+</style>
+
+<header>
+  <div class="column">
+    <div class="navigation">
+      <a href="/">Home</a>
+    </div>
+    <a class="user self" title="view gist" href="{{meta["blocks_link"]}}">{{meta["description"]}}</a>
+    <div class="date">({{num_versions}} forks)</div>
+  </div>
+</header>
+
+<div class="column gists">
+  <br clear="both">
+  <!-- <div class="loading">Loading; one moment please…</div> -->
+  <!-- <div class="none" style="display:none;">Sorry, Tom White has no blocks. <a href="/">Learn more.</a></div> -->
+</div>
+
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+
+var formatDate = d3.time.format("%B %-d, %Y"),
+    parseDate = d3.time.format.iso.parse,
+    page = 0,
+    fetching,
+    id;
+
+var blocks_run_root = "{{ js_settings["blocks_run_root"] }}";
+var purview_file_root = "{{ js_settings["purview_file_root"] }}";
+
+render({{ json|safe }}["records"]);
+
+// iOS Safari hangs if you try to XMLHttpRequest before loading.
+if (!document.readyState || document.readyState === "complete") init();
+else if (/iPad|iPhone|iPod/.test(navigator.userAgent)) d3.select(window).on("load", init);
+else if (document.readyState === "loading") d3.select(window).on("DOMContentLoaded", init);
+else setTimeout(maybeFetch, 50);
+
+function init() {
+}
+
+// function init() {
+//   d3.select(window)
+//       .on("scroll", maybeFetch)
+//       .on("resize", maybeFetch)
+//       .each(maybeFetch);
+// }
+
+// function maybeFetch() {
+//   return;
+//   if (!fetching && page >= 0 && d3.select(".loading").node().getBoundingClientRect().top < document.documentElement.clientHeight + 100) {
+//     ++page;
+//     fetch();
+//   }
+// }
+
+// function fetch() {
+//   fetching = true;
+//   d3.json("/" + encodeURIComponent("dribnet") + "/" + page + ".json" + (id ? "?" + id : ""), function(error, gists) {
+//     fetching = false;
+//     setTimeout(maybeFetch, 50);
+//     if (!error) render(gists);
+//   });
+// }
+
+function id_sha(d) {
+  // returns id or id/sha if sha exists
+  return d.id + (d.sha ? "/" + d.sha : "");
+}
+
+function login(d) {
+  return (d.login ? d.login : "anonymous");
+}
+
+function name(d) {
+  return (d.name ? d.name : login(d));
+}
+
+function render(gists) {
+
+  if (!gists.length) {
+    d3.select(".loading").remove();
+    if (page < 2) d3.select(".none").style("display", null);
+    page = id = NaN;
+    return;
+  }
+
+  id = gists[gists.length - 1].id;
+
+  gists.forEach(function(d) {
+    d.created_at = parseDate(d.created_at);
+    d.updated_at = parseDate(d.updated_at);
+  });
+
+  cell = d3.select(".gists").selectAll(".gist")
+      .data(gists, function(d) { return id_sha(d); })
+    .enter().insert("a", "br")
+      .attr("class", "gist gist--thumbnail")
+      .attr("href", function(d) { return "/versions/" + d.id + ".html"; })
+      .style("background-image", function(d) { return "url(" + purview_file_root + login(d) + "/raw/" + id_sha(d) + "/thumbnail.png)"; });
+
+  cell.append("div")
+      .attr("class", "gist-description gist-underline")
+    .append("img")
+        .attr('src', function(d) { return d.avatar_url + "&amp;s=60"; })
+        .attr('width', "30")
+        .attr('height', "30");
+  cell.append("div")
+      .attr("class", "gist-description gist-underline")
+      .text(function(d) { return name(d); });
+
+  // d3.select(".gists").selectAll(".gist")
+  //     .sort(function(a, b) { return b.updated_at - a.updated_at; });
+}
+</script>
