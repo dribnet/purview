@@ -187,7 +187,6 @@ def get_members_html(org):
 ### should now be easy to add "list gist forks"
 
 def forks_get_raw_json(gist_id):
-    print("HELLO", auth_headers)
     r = requests.get('https://api.github.com/gists/{}'.format(gist_id), headers=auth_headers, params=state_open_params)
     api_text = r.text
     r = requests.get('https://api.github.com/gists/{}/forks?per_page=100'.format(gist_id), headers=auth_headers, params=state_open_params)
