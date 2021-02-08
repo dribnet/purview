@@ -286,12 +286,17 @@ def versions_get_raw_json(gist_id):
     if sha_of_purview_branch is None:
         sha_of_purview_branch = gist_branch_to_sha(gist_id, "master")
     if sha_of_purview_branch is not None:
-        r = requests.get('http://purview-blocks.herokuapp.com/anonymous/raw/{}/{}/purview.json'.format(gist_id, sha_of_purview_branch))
+        r = requests.get('http://purview-blocks.herokuapp.com/anonymous/raw/{}/{}/_purview.json'.format(gist_id, sha_of_purview_branch))
         try:
             parse_test = json.loads(r.text)
             purview_text = r.text
         except:
-            purview_text = '"bad_json"'
+            r = requests.get('http://purview-blocks.herokuapp.com/anonymous/raw/{}/{}/purview.json'.format(gist_id, sha_of_purview_branch))
+            try:
+                parse_test = json.loads(r.text)
+                purview_text = r.text
+            except:
+                purview_text = '"bad_json"'
 
     r = requests.get('https://api.github.com/gists/{}'.format(gist_id), headers=auth_headers, params=state_open_params)
     return '{"purview":' + purview_text + ', "api":' + r.text + '}'
