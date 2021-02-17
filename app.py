@@ -38,7 +38,7 @@ def hello():
     return render_template("home.html")
 
 @app.route('/archive')
-def hello():
+def archive():
     return render_template("archive.html")
 
 @app.route('/settings')
