@@ -37,6 +37,10 @@ print("Default timeout is {}".format(default_timeout))
 def hello():
     return render_template("home.html")
 
+@app.route('/archive')
+def hello():
+    return render_template("archive.html")
+
 @app.route('/settings')
 def get_settings():
     return "APP_SETTINGS: {}".format(os.environ['APP_SETTINGS'])
