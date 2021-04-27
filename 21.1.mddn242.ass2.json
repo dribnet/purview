@@ -1,0 +1,334 @@
+{
+    "meta": {},
+    "records": [
+        {
+            "blackboard": "ahmedsuar",
+            "login": "suarimahmed",
+            "name": "suarim ahmed",
+            "id": "ff361361e0140124c81b83e28784f031",
+            "avatar_url": "https://github.com/suarimahmed.png?size=40"
+        },
+        {
+            "blackboard": "belljoel",
+            "login": "CrunchyPunch",
+            "name": "Joel Bell",
+            "id": "ec4adb3b20c87c56244373ea7e33df0f",
+            "avatar_url": "https://github.com/CrunchyPunch.png?size=40"
+        },
+        {
+            "blackboard": "boyleszavi",
+            "login": "boylesz",
+            "name": "Zavier Boyles",
+            "id": "49c860d27f91a594b64546bf6d0a5910",
+            "avatar_url": "https://github.com/boylesz.png?size=40"
+        },
+        {
+            "blackboard": "brentosash",
+            "login": "sashabrenton",
+            "name": "Sasha Brenton",
+            "id": "6323d9331cbb4c4ec42d44d234f02aca",
+            "avatar_url": "https://github.com/sashabrenton.png?size=40"
+        },
+        {
+            "blackboard": "bruwerroby",
+            "login": "robynskye",
+            "name": "Robyn Bruwer",
+            "id": "b2b22e708a6cc7580df16ba2eca16b5a",
+            "avatar_url": "https://github.com/robynskye.png?size=40"
+        },
+        {
+            "blackboard": "changvivi",
+            "login": "cvivianc",
+            "name": "Vivian Chang",
+            "id": "8d581f57bfaab46ccb447d10124db6ae",
+            "avatar_url": "https://github.com/cvivianc.png?size=40"
+        },
+        {
+            "blackboard": "dixonsara1",
+            "login": "sarahdixo",
+            "name": "Sarah Dixon",
+            "id": "cb6c21601e4de83659869133f708f820",
+            "avatar_url": "https://github.com/sarahdixo.png?size=40"
+        },
+        {
+            "blackboard": "dongyue",
+            "login": "LL-dy",
+            "name": "Luna Dong",
+            "id": "20d50a5b98da7e22ce46dac47a60db65",
+            "avatar_url": "https://github.com/LL-dy.png?size=40"
+        },
+        {
+            "blackboard": "ermenymati",
+            "login": "mat1as21",
+            "name": "Matias Ermenyi",
+            "id": "3b2279a796d48edaa9607d57d7155bf6",
+            "avatar_url": "https://github.com/mat1as21.png?size=40"
+        },
+        {
+            "blackboard": "evansedwa1",
+            "login": "ForbiddenMayonnaise",
+            "name": "Ed Evans",
+            "id": "a549f41ee6fb04b7366a27ed62b0c011",
+            "avatar_url": "https://github.com/ForbiddenMayonnaise.png?size=40"
+        },
+        {
+            "blackboard": "francihaye",
+            "login": "HayesFra",
+            "name": "Hayes Francis",
+            "id": "f0ed47113cb1d8c86a8cf888a7bb556c",
+            "avatar_url": "https://github.com/HayesFra.png?size=40"
+        },
+        {
+            "blackboard": "garcialaur1",
+            "login": "Garcialaur1",
+            "name": "Laura Garcia",
+            "id": "f16231da9b112bc055ae01cf527d05a0",
+            "avatar_url": "https://github.com/Garcialaur1.png?size=40"
+        },
+        {
+            "blackboard": "garnermaso",
+            "login": "MasonG006",
+            "name": "Mason Garner",
+            "id": "532f7570c09e3d05ea9cf55d2f0d019f",
+            "avatar_url": "https://github.com/MasonG006.png?size=40"
+        },
+        {
+            "blackboard": "hefferlucy",
+            "login": "LucyHeffernan",
+            "name": "Lucy Heffernan",
+            "id": "016f6463a66f98328d6dcc0f6d15d346",
+            "avatar_url": "https://github.com/LucyHeffernan.png?size=40"
+        },
+        {
+            "blackboard": "huynhdat",
+            "login": "nova20226",
+            "name": "Lucas Huynh",
+            "id": "686d870138bf33f233174d946d6f4a14",
+            "avatar_url": "https://github.com/nova20226.png?size=40"
+        },
+        {
+            "blackboard": "austindani",
+            "login": "dannydanda",
+            "name": "Daniel Khamis",
+            "id": "2db6902b231e7d1bfbebd1a8b263f929",
+            "avatar_url": "https://github.com/dannydanda.png?size=40"
+        },
+        {
+            "blackboard": "liqiyu",
+            "login": "blablabla-LLL",
+            "name": "Christina Li",
+            "id": "f9d377de2c9a304cef0d3acb0ac2528e",
+            "avatar_url": "https://github.com/blablabla-LLL.png?size=40"
+        },
+        {
+            "blackboard": "liutian3",
+            "login": "CarsonTianyiLiu233",
+            "name": "Carson Liu",
+            "id": "92399ed4be88b299d552bd020c0c4ef6",
+            "avatar_url": "https://github.com/CarsonTianyiLiu233.png?size=40"
+        },
+        {
+            "blackboard": "lynchchar",
+            "login": "Charlie64N7",
+            "name": "Charlie Lynch-Gerrard",
+            "id": "4642f4c299930f72a4f0072e739f4369",
+            "avatar_url": "https://github.com/Charlie64N7.png?size=40"
+        },
+        {
+            "blackboard": "marshajord",
+            "login": "JordySandra",
+            "name": "Jordan Marshall",
+            "id": "e7e8cba997404d061101ffb29b13bbf5",
+            "avatar_url": "https://github.com/JordySandra.png?size=40"
+        },
+        {
+            "blackboard": "mattheharr",
+            "login": "hjmatthewsnz",
+            "name": "Harrison Matthews",
+            "id": "NONE1",
+            "avatar_url": "https://github.com/hjmatthewsnz.png?size=40"
+        },
+        {
+            "blackboard": "mcbridjaco",
+            "login": "jwm197",
+            "name": "Jacob McBride",
+            "id": "b28754a4530fb8604a36719f14d9f5df",
+            "avatar_url": "https://github.com/jwm197.png?size=40"
+        },
+        {
+            "blackboard": "mcsweesamu",
+            "login": "Pitiedbag",
+            "name": "Sam McSweeney",
+            "id": "d7df67f84278665fba8c537bb177c33a",
+            "avatar_url": "https://github.com/Pitiedbag.png?size=40"
+        },
+        {
+            "blackboard": "ratanpsani",
+            "login": "sratanpal",
+            "name": "Sanika Ratanpal",
+            "id": "025d48f33dc0e0e81f5406c4545da61f",
+            "avatar_url": "https://github.com/sratanpal.png?size=40"
+        },
+        {
+            "blackboard": "rushsama",
+            "login": "SamRush99",
+            "name": "Sam Rush",
+            "id": "58d2859ab2cf4e244dac044c15c75b9f",
+            "avatar_url": "https://github.com/SamRush99.png?size=40"
+        },
+        {
+            "blackboard": "shanahcono",
+            "login": "SkullNinjaNZ",
+            "name": "Conor Shanahan",
+            "id": "7462ebe11baf2df53ad8dbecd7182a85",
+            "avatar_url": "https://github.com/SkullNinjaNZ.png?size=40"
+        },
+        {
+            "blackboard": "sheafetha",
+            "login": "EthanSheafMorrison",
+            "name": "Ethan Sheaf-Morrison",
+            "id": "3bf0290e1851caee6cc749b4b19c43f0",
+            "avatar_url": "https://github.com/EthanSheafMorrison.png?size=40"
+        },
+        {
+            "blackboard": "smithcait2",
+            "login": "CaitHolly",
+            "name": "Caitlin Smith",
+            "id": "1e09e3e159f4b9e690ddced457282931",
+            "avatar_url": "https://github.com/CaitHolly.png?size=40"
+        },
+        {
+            "blackboard": "smithscot1",
+            "login": "ScooottSmith",
+            "name": "Scott Smith",
+            "id": "722a31c963ba59ccce543a2773de8e01",
+            "avatar_url": "https://github.com/ScooottSmith.png?size=40"
+        },
+        {
+            "blackboard": "southoamy1",
+            "login": "Southoamy1",
+            "name": "Amy Southon",
+            "id": "NONE2",
+            "avatar_url": "https://github.com/Southoamy1.png?size=40"
+        },
+        {
+            "blackboard": "styleszoe",
+            "login": "zzzmas",
+            "name": "Zoe Styles",
+            "id": "b76369d4b2a96f15f7533a766399a8bf",
+            "avatar_url": "https://github.com/zzzmas.png?size=40"
+        },
+        {
+            "blackboard": "taboadguad",
+            "login": "guadalutaboada",
+            "name": "Guadalupe Taboada",
+            "id": "185a561dbfaac4f1baf6eb6524051aa2",
+            "avatar_url": "https://github.com/guadalutaboada.png?size=40"
+        },
+        {
+            "blackboard": "takedaanna",
+            "login": "annatakeda427",
+            "name": "Anna Takeda",
+            "id": "a29f76f9d90894d7535bb95ce2852adf",
+            "avatar_url": "https://github.com/annatakeda427.png?size=40"
+        },
+        {
+            "blackboard": "thomasella1",
+            "login": "EllaThomas1",
+            "name": "Ella Thomas",
+            "id": "1aa40f482c77bd746ec9fc440064c8b3",
+            "avatar_url": "https://github.com/EllaThomas1.png?size=40"
+        },
+        {
+            "blackboard": "usherwbray",
+            "login": "SollyTuatara",
+            "name": "Brayden Usherwood",
+            "id": "c1dd1106ccd2d9e595196856d866ece0",
+            "avatar_url": "https://github.com/SollyTuatara.png?size=40"
+        },
+        {
+            "blackboard": "vithalkhal",
+            "login": "Khallum",
+            "name": "Khallum Vithal",
+            "id": "NONE3",
+            "avatar_url": "https://github.com/Khallum.png?size=40"
+        },
+        {
+            "blackboard": "walkerleil1",
+            "login": "walkerleil1",
+            "name": "Leila Walker",
+            "id": "NONE4",
+            "avatar_url": "https://github.com/walkerleil1.png?size=40"
+        },
+        {
+            "blackboard": "watsoncall",
+            "login": "plqnted",
+            "name": "Callum Watson",
+            "id": "c81a084b0cdffba400b75274b7b1f818",
+            "avatar_url": "https://github.com/plqnted.png?size=40"
+        },
+        {
+            "blackboard": "wellinthom",
+            "login": "",
+            "name": "Tom Wellington",
+            "id": "99a4c417e367bd10a421197bcd149f0c",
+            "avatar_url": "https://github.com/.png?size=40"
+        },
+        {
+            "blackboard": "wendtchri",
+            "login": "twominutenudels",
+            "name": "Christopher Wendt",
+            "id": "fd2aa4a54240c62fd7bf72a9dfa4a71b",
+            "avatar_url": "https://github.com/twominutenudels.png?size=40"
+        },
+        {
+            "blackboard": "woolcoambe",
+            "login": "amberwoolcock",
+            "name": "Amber Woolcock",
+            "id": "1f0167c367ad41136f9b3b20b7c911db",
+            "avatar_url": "https://github.com/amberwoolcock.png?size=40"
+        },
+        {
+            "blackboard": "xuzixi2",
+            "login": "EmilyX19",
+            "name": "Emily Xu",
+            "id": "d0af5f5356a44cc3bf8138e893ade05c",
+            "avatar_url": "https://github.com/EmilyX19.png?size=40"
+        },
+        {
+            "blackboard": "xushua",
+            "login": "",
+            "name": "Shuangyan Xu",
+            "id": "NONE5",
+            "avatar_url": "https://github.com/.png?size=40"
+        },
+        {
+            "blackboard": "yangli1",
+            "login": "yanglll3x",
+            "name": "Emily Yang",
+            "id": "9a44d3a0de562ebe7b99be5382b36335",
+            "avatar_url": "https://github.com/yanglll3x.png?size=40"
+        },
+        {
+            "blackboard": "zembafinn",
+            "login": "Finn-Zba",
+            "name": "Finn Zemba",
+            "id": "7291fe84070a253c32c199d8ca35b3a2",
+            "avatar_url": "https://github.com/Finn-Zba.png?size=40"
+        },
+        {
+            "blackboard": "zhuxiao5",
+            "login": "Candice-Zhu",
+            "name": "Xiaoya Zhu",
+            "id": "3fd90c6feb75ab7a7c6ab50226a8354c",
+            "avatar_url": "https://github.com/Candice-Zhu.png?size=40"
+        },
+        {
+            "blackboard": "zhugejier",
+            "login": "JieruiZhuge",
+            "name": "JIERIE",
+            "id": "2a4d6a92e44ba6893d7a0bc88291cf80",
+            "avatar_url": "https://github.com/JieruiZhuge.png?size=40"
+        }
+    ]
+}

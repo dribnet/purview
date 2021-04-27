@@ -11,6 +11,7 @@ def run_user_list(file, forks):
     for f in forks:
         if f["owner"]["login"] not in data:
             print('{} not found in user list'.format(f["owner"]["login"]))
+    none_num = 1
     for github_id in data:
         found = []
         for f in forks:
@@ -18,7 +19,8 @@ def run_user_list(file, forks):
                 found.append(f["id"])
         num_found = len(found)
         if num_found == 0:
-            print("NONE")
+            print(f"NONE{none_num}")
+            none_num = none_num + 1
         elif num_found == 1:
             print(found[0])
         else:
