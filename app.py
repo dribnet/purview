@@ -291,12 +291,12 @@ def versions_get_raw_json(gist_id):
     if sha_of_purview_branch is None:
         sha_of_purview_branch = gist_branch_to_sha(gist_id, "master")
     if sha_of_purview_branch is not None:
-        r = requests.get('http://purview-blocks.herokuapp.com/anonymous/raw/{}/{}/_purview.json'.format(gist_id, sha_of_purview_branch))
+        r = requests.get('https://bl.ocks.org/anonymous/raw/{}/{}/_purview.json'.format(gist_id, sha_of_purview_branch))
         try:
             parse_test = json.loads(r.text)
             purview_text = r.text
         except:
-            r = requests.get('http://purview-blocks.herokuapp.com/anonymous/raw/{}/{}/purview.json'.format(gist_id, sha_of_purview_branch))
+            r = requests.get('https://bl.ocks.org/anonymous/raw/{}/{}/purview.json'.format(gist_id, sha_of_purview_branch))
             try:
                 parse_test = json.loads(r.text)
                 purview_text = r.text
