@@ -268,7 +268,7 @@ def get_assignment_html(assign_id):
 # broken "purview_file_root": "http://purview-blocks.herokuapp.com/"
 js_settings = {
     "blocks_run_root": "https://bl.ocks.org/",
-    "purview_file_root": "https://bl.ocks.org/"
+    "purview_file_root": "http://purview-blocks.herokuapp.com/"
 }
 
 def gist_branch_to_sha(gist_id, gist_branch):
@@ -291,12 +291,12 @@ def versions_get_raw_json(gist_id):
     if sha_of_purview_branch is None:
         sha_of_purview_branch = gist_branch_to_sha(gist_id, "master")
     if sha_of_purview_branch is not None:
-        r = requests.get('https://bl.ocks.org/anonymous/raw/{}/{}/_purview.json'.format(gist_id, sha_of_purview_branch))
+        r = requests.get('http://purview-blocks.herokuapp.com/anonymous/raw/{}/{}/_purview.json'.format(gist_id, sha_of_purview_branch))
         try:
             parse_test = json.loads(r.text)
             purview_text = r.text
         except:
-            r = requests.get('https://bl.ocks.org/anonymous/raw/{}/{}/purview.json'.format(gist_id, sha_of_purview_branch))
+            r = requests.get('http://purview-blocks.herokuapp.com/anonymous/raw/{}/{}/purview.json'.format(gist_id, sha_of_purview_branch))
             try:
                 parse_test = json.loads(r.text)
                 purview_text = r.text
