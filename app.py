@@ -265,9 +265,10 @@ def get_assignment_html(assign_id):
 
 # here is the core purview versions api
 # this could be set from env, etc. in future
+# broken "purview_file_root": "http://purview-blocks.herokuapp.com/"
 js_settings = {
     "blocks_run_root": "https://bl.ocks.org/",
-    "purview_file_root": "http://purview-blocks.herokuapp.com/"
+    "purview_file_root": "https://bl.ocks.org/"
 }
 
 def gist_branch_to_sha(gist_id, gist_branch):
