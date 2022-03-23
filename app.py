@@ -290,6 +290,8 @@ def versions_get_raw_json(gist_id):
     sha_of_purview_branch = gist_branch_to_sha(gist_id, "purview")
     if sha_of_purview_branch is None:
         sha_of_purview_branch = gist_branch_to_sha(gist_id, "master")
+    if sha_of_purview_branch is None:
+        sha_of_purview_branch = gist_branch_to_sha(gist_id, "main")
     if sha_of_purview_branch is not None:
         r = requests.get('http://purview-blocks.herokuapp.com/anonymous/raw/{}/{}/_purview.json'.format(gist_id, sha_of_purview_branch))
         try:
