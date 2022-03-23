@@ -1,0 +1,19 @@
+{
+    "meta": {},
+    "records": [
+        {
+            "blackboard": "corpeleti",
+            "login": "tiacorpe",
+            "name": "Corpe",
+            "id": "3bca7f0f5f10fe74451050b90bbaa1ca",
+            "avatar_url": "https://github.com/tiacorpe.png?size=40"
+        },
+        {
+            "blackboard": "pengding1",
+            "login": "pengding1",
+            "name": "Peng",
+            "id": "78ebf8e61015341308b20f5fb777a59c",
+            "avatar_url": "https://github.com/pengding1.png?size=40"
+        }
+    ]
+}
