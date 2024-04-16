@@ -5,7 +5,8 @@ import re
 from flask import Flask, Response, url_for
 from flask import render_template
 import requests
-from werkzeug.contrib.cache import SimpleCache
+# from werkzeug.contrib.cache import SimpleCache
+from cachelib import SimpleCache
 from flask_cache_response_decorator import cache
 
 app = Flask(__name__)
@@ -267,8 +268,8 @@ def get_assignment_html(assign_id):
 # this could be set from env, etc. in future
 # broken "purview_file_root": "http://purview-blocks.herokuapp.com/"
 js_settings = {
-    "blocks_run_root": "https://bl.ocks.org/",
-    "purview_file_root": "https://bl.ocks.org/"
+    "blocks_run_root": "https://blocks.roadtolarissa.com/",
+    "purview_file_root": "https://blocks.roadtolarissa.com/"
 }
 
 def gist_branch_to_sha(gist_id, gist_branch):
